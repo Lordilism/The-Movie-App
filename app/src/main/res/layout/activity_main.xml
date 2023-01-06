@@ -32,10 +32,29 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <androidx.viewpager2.widget.ViewPager2
-                android:id="@+id/viewPagerBanner"
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/height_banner" />
+                android:layout_height="wrap_content">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewPagerBanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_banner" />
+
+                <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                    android:id="@+id/dotsIndicatorBanner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:dotsColor="@android:color/darker_gray"
+                    app:dotsCornerRadius="@dimen/margin_medium"
+                    app:dotsSize="@dimen/margin_medium"
+                    app:dotsSpacing="@dimen/margin_small"
+                    app:dotsWidthFactor="1"
+                    app:progressMode="false"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    app:selectedDotColor="@color/colorAccent" />
+            </FrameLayout>
 
         </RelativeLayout>
 

@@ -34,5 +34,5 @@
 
 
     <!--    App Specific Dimensions-->
-    <dimen name="height_banner">240dp</dimen>
+    <dimen name="height_banner">250dp</dimen>
 </resources>

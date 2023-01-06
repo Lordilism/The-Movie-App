@@ -24,6 +24,9 @@ class MainActivity : AppCompatActivity() {
     private fun setUpBannerViewPager() {
         mBannerAdapter = BannerAdapter()
         viewPagerBanner.adapter = mBannerAdapter
+
+        //Dots Indicator Banner
+        dotsIndicatorBanner.attachTo(viewPagerBanner)
     }
 
     private fun setUpToolBar() {
