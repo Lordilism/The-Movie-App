@@ -3,4 +3,13 @@
     <string name="lbl_discover">Discover</string>
     <string name="lbl_search">Search</string>
     <string name="lbl_best_popular_films_and_series">BEST POPULAR FILMS AND SERIES</string>
+    <string name="lbl_check_movie_nshowtime">Check Movie\nShowtime</string>
+    <string name="lbl_see_more"><u>SEE MORE</u></string>
+    <string name="lbl_show_cases">SHOW CASES</string>
+    <string name="lbl_more_showcases">MORE SHOWCASES</string>
+    <string name="lbl_showcase_movie_name">Passengers</string>
+    <string name="lbl_showcase_movie_date">15 Dec,2016</string>
+    <string name="lbl_best_actors">BEST ACTORS</string>
+    <string name="lbl_more_actors"><u>MORE ACTORS</u></string>
+    <string name="lbl_actor_name">Robert Downey Jr.</string>
 </resources>

@@ -3,11 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/gradient_actor.xml" value="0.1145" />
         <entry key="app/src/main/res/drawable/gradient_banner.xml" value="0.1035" />
         <entry key="app/src/main/res/drawable/ic_baseline_play_arrow_black_24dp.xml" value="0.1035" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.11" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/view_holder_best_actor.xml" value="0.30977783203125003" />
         <entry key="app/src/main/res/layout/view_holder_movies.xml" value="0.25677083333333334" />
+        <entry key="app/src/main/res/layout/view_holder_show_cases.xml" value="0.25677083333333334" />
         <entry key="app/src/main/res/layout/view_item_banner.xml" value="0.19479166666666667" />
+        <entry key="app/src/main/res/layout/view_pod_actor_list.xml" value="0.2578125" />
         <entry key="app/src/main/res/layout/view_pod_movies_list.xml" value="0.2578125" />
         <entry key="app/src/main/res/menu/menu_discover.xml" value="0.2578125" />
       </map>
