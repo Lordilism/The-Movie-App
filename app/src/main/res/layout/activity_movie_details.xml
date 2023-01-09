@@ -151,8 +151,21 @@
                 android:gravity="center"
                 android:paddingStart="@dimen/margin_medium"
                 android:paddingEnd="@dimen/margin_medium"
-                android:text="Action"
+                android:text="Fantasty"
                 android:textColor="@color/white" />
+
+            <!--            <androidx.appcompat.widget.AppCompatTextView-->
+            <!--                android:id="@+id/tvSecondGenre"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="@dimen/margin_xlarge"-->
+            <!--                android:layout_marginStart="@dimen/margin_medium"-->
+            <!--                android:layout_toEndOf="@id/tvFirstGenre"-->
+            <!--                android:background="@drawable/background_genre_chip"-->
+            <!--                android:gravity="center"-->
+            <!--                android:paddingStart="@dimen/margin_medium"-->
+            <!--                android:paddingEnd="@dimen/margin_medium"-->
+            <!--                android:text="Mysterious"-->
+            <!--                android:textColor="@color/white" />-->
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvSecondGenre"
@@ -160,18 +173,6 @@
                 android:layout_height="@dimen/margin_xlarge"
                 android:layout_marginStart="@dimen/margin_medium"
                 android:layout_toEndOf="@id/tvFirstGenre"
-                android:background="@drawable/background_genre_chip"
-                android:gravity="center"
-                android:paddingStart="@dimen/margin_medium"
-                android:paddingEnd="@dimen/margin_medium"
-                android:text="Mysterious"
-                android:textColor="@color/white" />
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/margin_xlarge"
-                android:layout_marginStart="@dimen/margin_medium"
-                android:layout_toEndOf="@id/tvSecondGenre"
                 android:background="@drawable/background_genre_chip"
                 android:gravity="center"
                 android:paddingStart="@dimen/margin_medium"
@@ -186,7 +187,8 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="@dimen/margin_medium_2"
                 android:paddingTop="@dimen/margin_small"
-                app:srcCompat="@drawable/ic_baseline_favorite_border_white_24dp" />
+                app:srcCompat="@drawable/ic_baseline_favorite_border_white_24dp"
+                app:tint="@color/colorAccent" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvTitleStoryLine"
@@ -210,6 +212,75 @@
                 android:text="@string/lbl_storyline_synosis"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/btnPlayTrailer"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_xxlarge"
+                android:layout_below="@id/tvOverview"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_card_medium_2"
+                android:background="@drawable/background_play_trailer"
+                android:paddingStart="@dimen/margin_medium_2"
+                android:paddingEnd="@dimen/margin_medium_2">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivPlay"
+                    android:layout_width="@dimen/margin_xlarge"
+                    android:layout_height="@dimen/margin_xlarge"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_baseline_play_circle_filled_white_24dp"
+                    app:tint="@color/colorTransparentOverlayPlayButton" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_card_medium"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_toEndOf="@id/ivPlay"
+                    android:text="Play Trailer"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_regular_2x"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_xxlarge"
+                android:layout_below="@id/tvOverview"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginEnd="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:layout_toEndOf="@id/btnPlayTrailer"
+                android:background="@drawable/background_rating_trailor"
+                android:paddingStart="@dimen/margin_medium_2"
+                android:paddingEnd="@dimen/margin_medium_2">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivStar"
+                    android:layout_width="@dimen/margin_xlarge"
+                    android:layout_height="@dimen/margin_xlarge"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_baseline_star_rate_whit_24dp"
+                    app:tint="@color/colorAccent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/ivStar"
+                    android:layout_marginStart="@dimen/margin_card_medium"
+                    android:text="Rating Trailer"
+
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_regular_2x"
+                    android:textStyle="bold"
+
+                    />
+
+            </RelativeLayout>
+
 
         </RelativeLayout>
 
