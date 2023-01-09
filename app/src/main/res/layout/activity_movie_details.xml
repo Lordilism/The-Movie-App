@@ -20,6 +20,30 @@
             app:expandedTitleTextColor="@android:color/transparent"
             app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
             app:title="Fantastic Beasts And Where to Find Them!">
+            <FrameLayout
+                android:id="@+id/btnBack"
+                android:layout_width="@dimen/margin_xlarge"
+                android:layout_height="@dimen/margin_xlarge"
+                android:elevation="@dimen/margin_medium"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_xlarge"
+                android:background="@drawable/background_back_btn">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_baseline_chevron_left_white_24dp"/>
+
+            </FrameLayout>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/margin_large"
+                android:layout_height="@dimen/margin_large"
+                android:elevation="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_xlarge"
+                android:layout_gravity="end"
+                app:srcCompat="@drawable/ic_search"/>
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="match_parent"
@@ -250,8 +274,8 @@
                 android:layout_height="@dimen/margin_xxlarge"
                 android:layout_below="@id/tvOverview"
                 android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_card_medium_2"
                 android:layout_marginEnd="@dimen/margin_medium_2"
-                android:layout_marginTop="@dimen/margin_medium_2"
                 android:layout_toEndOf="@id/btnPlayTrailer"
                 android:background="@drawable/background_rating_trailor"
                 android:paddingStart="@dimen/margin_medium_2"
@@ -269,8 +293,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:layout_toEndOf="@id/ivStar"
                     android:layout_marginStart="@dimen/margin_card_medium"
+                    android:layout_toEndOf="@id/ivStar"
                     android:text="Rating Trailer"
 
                     android:textColor="@color/white"
@@ -280,6 +304,188 @@
                     />
 
             </RelativeLayout>
+
+            <include
+                android:id="@+id/vpActors"
+                layout="@layout/view_pod_actor_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnPlayTrailer"
+                android:layout_marginTop="@dimen/margin_large" />
+
+            <include
+                android:id="@+id/vpCreaters"
+                layout="@layout/view_pod_actor_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llDescription" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAboutFilmLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_about_film"
+                android:textColor="@color/colorSecondaryText"
+                android:textStyle="bold"
+                android:layout_below="@id/vpActors"
+                android:layout_marginTop="@dimen/margin_medium_3"
+                android:layout_marginStart="@dimen/margin_medium_2"/>
+
+            <LinearLayout
+                android:id="@+id/llOrigianlTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvAboutFilmLabel"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:layout_marginEnd="@dimen/margin_medium_2"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvOriginalTitlelabel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:text="@string/lbl_original_title"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="@dimen/text_regular_2x"
+                    android:textStyle="" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvOriginalTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:text="Fantastiv Beasts And Where to Find Them!"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llOrigianlTitle"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_medium_3"
+                android:layout_marginEnd="@dimen/margin_medium_2"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTypeLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:text="@string/lbl_type"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="@dimen/text_regular_2x"
+                    android:textStyle="" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:text="Fantasy, family, Adventure "
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llProduction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llType"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_medium_3"
+                android:layout_marginEnd="@dimen/margin_medium_2"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvProductionLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:text="@string/lbl_production"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="@dimen/text_regular_2x"
+                    android:textStyle="" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvProduction"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:text="United Kingdom, USA. "
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPremiere"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llProduction"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_medium_3"
+                android:layout_marginEnd="@dimen/margin_medium_2"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvPremiereLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:text="@string/lbl_premiere"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="@dimen/text_regular_2x"
+                    android:textStyle="" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvPremiere"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:text="8 November, 2016(World) "
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llPremiere"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_medium_3"
+                android:layout_marginEnd="@dimen/margin_medium_2"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/margin_medium_2"
+                android:weightSum="1">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvDescriptionLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:text="@string/lbl_description"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="@dimen/text_regular_2x"
+                    android:textStyle="" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:text="The Film begins in 1926. Newt Scamandar back from a great trip, the purpose of which was to find and describe a range of fantastic animals. His brief stay in New York... "
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
 
 
         </RelativeLayout>

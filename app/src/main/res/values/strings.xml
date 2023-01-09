@@ -13,5 +13,15 @@
     <string name="lbl_more_actors"><u>MORE ACTORS</u></string>
     <string name="lbl_actor_name">Robert Downey Jr.</string>
     <string name="lbl_storyline">STORYLINE</string>
+    <string name="lbl_actors">ACTORS</string>
+    <string name="lbl_creators">CREATORS</string>
+    <string name="lbl_more_creators">MORE CREATOR</string>
     <string name="lbl_storyline_synosis">The year is 1926, and Newt Scamander (Eddie Redmayne) has just completed a global excursion to find and document an extraordinary array of magical creatures. Arriving in New York for a brief stopover, he might have come and gone without incident, were it not for a No-Maj (American for Muggle) named Jacob, a misplaced magical case, and the escape of some of Newt\'s fantastic beasts, which could spell trouble for both the wizarding and No-Maj worlds.</string>
+    <string name="lbl_original_title">Original Title:</string>
+    <string name="lbl_type">Type:</string>
+    <string name="lbl_production">Production:</string>
+    <string name="lbl_premiere">Premiere</string>
+    <string name="lbl_description">Description</string>
+    <string name="lbl_about_film">About Film</string>
+
 </resources>
