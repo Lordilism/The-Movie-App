@@ -43,7 +43,6 @@ class MainActivity : AppCompatActivity(), BannerViewHolderDelegate, ShowcaseeVie
         //showcase recycler view
         setUpShowCaseRecyclerView()
 
-        vpBestPopularMovieList as MoviesListViewPod
 
     }
 
@@ -108,19 +107,15 @@ class MainActivity : AppCompatActivity(), BannerViewHolderDelegate, ShowcaseeVie
     }
 
     override fun onTapMovieFromBanner() {
-        Snackbar.make(window.decorView,"Tapped Movie From Banner",Snackbar.LENGTH_SHORT).show()
+        startActivity(MovieDetailsActivity.newIntent(this))
     }
 
     override fun onTapMovieFromShowcase() {
-        Snackbar.make(window.decorView, "Tapped Movie From Showcase", Snackbar.LENGTH_SHORT).show()
+        startActivity(MovieDetailsActivity.newIntent(this))
 
     }
 
     override fun onTapMovies() {
-        Snackbar.make(
-            window.decorView,
-            "Tapped Movie From Best popular or Genre",
-            Snackbar.LENGTH_SHORT
-        ).show()
+        startActivity(MovieDetailsActivity.newIntent(this))
     }
 }
