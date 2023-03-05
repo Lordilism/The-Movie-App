@@ -1,0 +1,11 @@
+package com.example.themoviesapp.data.vos
+
+import com.google.gson.annotations.SerializedName
+
+class ProductionCountriesVO(
+        @SerializedName("iso_3166_1")
+        val iso_3166_1:String?,
+
+        @SerializedName("name")
+        val name:String?
+)

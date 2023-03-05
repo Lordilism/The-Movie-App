@@ -14,6 +14,7 @@
         android:text="@string/lbl_best_actors"
         android:textColor="@color/colorSecondaryText"
         android:textStyle="bold" />
+
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvMoreActors"
         android:layout_width="wrap_content"

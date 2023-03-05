@@ -1,5 +1,5 @@
 package com.example.themoviesapp.delegates
 
 interface ShowcaseeViewHolderDelegate {
-    fun onTapMovieFromShowcase()
+    fun onTapMovieFromShowcase(movieId:Int)
 }

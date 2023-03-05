@@ -47,16 +47,17 @@
         android:textColor="@color/colorSecondaryText"
         android:textSize="@dimen/text_smaller"
         android:textStyle="bold" />
+
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvActorsName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_above="@id/btnLike"
         android:layout_alignStart="@id/btnLike"
-        android:text="@string/lbl_actor_name"
-        android:textColor="@color/white"
-        android:textStyle="bold"
         android:layout_marginEnd="@dimen/margin_card_medium_2"
         android:layout_marginBottom="@dimen/margin_medium"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:text="@string/lbl_actor_name"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
 
 </RelativeLayout>

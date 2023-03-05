@@ -178,12 +178,14 @@
                 android:clipToPadding="false"
                 android:paddingEnd="@dimen/margin_medium_2"
                 android:paddingBottom="@dimen/margin_card_medium_2" />
+
             <include
+                android:id="@+id/vpActorsList"
                 layout="@layout/view_pod_actor_list"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_medium_3"
-                android:layout_below="@id/rvShowCases"/>
+                android:layout_below="@id/rvShowCases"
+                android:layout_marginTop="@dimen/margin_medium_3" />
 
 
         </RelativeLayout>
